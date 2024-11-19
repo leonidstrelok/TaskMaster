@@ -9,36 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/ClientConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Interfaces/IApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Base/GenderType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/TaskMasterAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/TaskMasterAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/TaskMasterAPI.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Добавил новые библиотеки а так же добавил новую миграцию для пользователя" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +37,9 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
     "rider.external.source.directories": [
       "C:\\Users\\Leonid\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
       "C:\\Users\\Leonid\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
@@ -175,12 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1732011027516</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил новые библиотеки а так же добавил новую миграцию для пользователя">
+      <option name="closed" value="true" />
+      <created>1732026844616</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732026844616</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Добавил новые библиотеки а так же добавил новую миграцию для пользователя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил новые библиотеки а так же добавил новую миграцию для пользователя" />
   </component>
 </project>
