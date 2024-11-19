@@ -9,7 +9,7 @@ namespace TaskMasterAPI.Controllers;
 [ApiController]
 [Consumes("application/json")]
 [Produces("application/json")]
-[Route("api")]
+[Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
     private readonly IConfiguration _configuration;
