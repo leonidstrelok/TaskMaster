@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TaskMasterAPI.DAL.Context;
@@ -11,9 +12,11 @@ using TaskMasterAPI.DAL.Context;
 namespace TaskMasterAPI.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241119161838_Add_New_Table_Comments_History_Task")]
+    partial class Add_New_Table_Comments_History_Task
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -270,7 +273,7 @@ namespace TaskMasterAPI.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CommentTask", (string)null);
+                    b.ToTable("CommentTask");
                 });
 
             modelBuilder.Entity("TaskMasterAPI.Models.HistoryTask", b =>
@@ -295,7 +298,7 @@ namespace TaskMasterAPI.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("HistoryTask", (string)null);
+                    b.ToTable("HistoryTask");
                 });
 
             modelBuilder.Entity("TaskMasterAPI.Models.Task", b =>
@@ -338,7 +341,7 @@ namespace TaskMasterAPI.DAL.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.ToTable("Task", (string)null);
+                    b.ToTable("Task");
                 });
 
             modelBuilder.Entity("CommentTaskTask", b =>

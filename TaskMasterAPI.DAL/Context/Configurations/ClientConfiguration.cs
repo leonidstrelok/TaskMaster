@@ -8,5 +8,6 @@ public class ClientConfiguration : IEntityTypeConfiguration<Client>
 {
     public void Configure(EntityTypeBuilder<Client> builder)
     {
+        builder.HasKey(p => p.Id);
     }
 }
