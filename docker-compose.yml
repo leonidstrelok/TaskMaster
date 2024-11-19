@@ -1,0 +1,6 @@
+﻿services:
+  taskmasterapi:
+    image: taskmasterapi
+    build:
+      context: .
+      dockerfile: TaskMasterAPI/Dockerfile

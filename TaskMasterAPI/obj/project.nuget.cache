@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "OMflrFW/6l7EhfVLj6ufjprVCQ07zF7uypUDolCn6ddLlSQur0PJ9Nfn/mjEH1Oh/dl/KbCrwm8UW1MUwH6W9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Leonid\\RiderProjects\\TaskMasterAPI\\TaskMasterAPI\\TaskMasterAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leonid\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}
