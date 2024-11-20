@@ -1,7 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using TaskMasterAPI.BLL;
 using TaskMasterAPI.DAL.Seeds;
 using TaskMasterAPI.Middlewares;

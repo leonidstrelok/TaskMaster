@@ -1,5 +1,4 @@
-﻿using TaskMasterAPI.Models.Bases;
-using TaskMasterAPI.Models.Clients;
+﻿using TaskMasterAPI.Models.Clients;
 
 namespace TaskMasterAPI.BLL.Interfaces;
 

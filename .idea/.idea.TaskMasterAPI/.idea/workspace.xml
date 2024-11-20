@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/indexLayout.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732093526322</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавил фронт на реакте для приложения">
+      <option name="closed" value="true" />
+      <created>1732110068453</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732110068453</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -227,7 +235,8 @@
     <MESSAGE value="Обновил README.md" />
     <MESSAGE value="Обновил workspace.xml" />
     <MESSAGE value="Добавил новую модель для указания компании а так же расширил модели клиента и задач." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил новую модель для указания компании а так же расширил модели клиента и задач." />
+    <MESSAGE value="Добавил фронт на реакте для приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил фронт на реакте для приложения" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
