@@ -9,19 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Подключил БД">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Обновил README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732027342254</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Обновил README.md">
+      <option name="closed" value="true" />
+      <created>1732089573251</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732089573251</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +199,7 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Добавил новые библиотеки а так же добавил новую миграцию для пользователя" />
     <MESSAGE value="Подключил БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подключил БД" />
+    <MESSAGE value="Обновил README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил README.md" />
   </component>
 </project>
