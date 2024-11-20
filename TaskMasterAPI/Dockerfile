@@ -1,13 +1,15 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER $APP_UID
+﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS base
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 80
+EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["TaskMasterAPI/TaskMasterAPI.csproj", "TaskMasterAPI/"]
+COPY "/TaskMasterAPI/TaskMasterAPI.csproj" "TaskMasterAPI/"
+COPY "TaskMasterAPI.BLL/TaskMasterAPI.BLL.csproj" "TaskMasterAPI.BLL/"
+COPY "TaskMasterAPI.DAL/TaskMasterAPI.DAL.csproj" "TaskMasterAPI.DAL/"
+COPY "TaskMasterAPI.Models/TaskMasterAPI.Models.csproj" "TaskMasterAPI.Models/"
 RUN dotnet restore "TaskMasterAPI/TaskMasterAPI.csproj"
 COPY . .
 WORKDIR "/src/TaskMasterAPI"
@@ -15,7 +17,7 @@ RUN dotnet build "TaskMasterAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "TaskMasterAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "TaskMasterAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish
 
 FROM base AS final
 WORKDIR /app

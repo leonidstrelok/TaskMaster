@@ -1,0 +1,8 @@
+services:
+  postgresdb:
+    container_name: postgresdb
+    image: postgres:latest
+    restart: always
+    
+volumes:
+  postgres-db:

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="UserContentModel">
     <attachedFolders />
-    <explicitIncludes />
+    <explicitIncludes>
+      <Path>.env</Path>
+      <Path>docker-compose.db.override.yml</Path>
+      <Path>docker-compose.db.yml</Path>
+      <Path>run-containers.sh</Path>
+    </explicitIncludes>
     <explicitExcludes />
   </component>
 </project>

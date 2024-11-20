@@ -1,6 +1,19 @@
 ﻿services:
   taskmasterapi:
+    container_name: task_manager_api
     image: taskmasterapi
     build:
       context: .
       dockerfile: TaskMasterAPI/Dockerfile
+    restart: always
+  
+  pgAdmin:
+    container_name: pgAdmin
+    image: dpage/pgadmin4
+    restart: always
+
+networks:
+  task_manager_network:
+
+volumes:
+  pgAdmin-data:

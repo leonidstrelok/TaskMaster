@@ -9,23 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Обновил workspace.xml">
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/CompanyConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/20241120083636_Add_Table_Company_And_New_Relations_For_Task.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/20241120083636_Add_Table_Company_And_New_Relations_For_Task.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/CompanyIndustryType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Company.cs" afterDir="false" />
+    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskMasterAPI/Middlewares/ExceptionHandlingMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build-containers.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.db.override.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.db.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.override.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run-containers.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/TaskConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/TaskConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/RoleType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/RoleType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Task.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Task.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/3f1acb59718cadf111a0a796681e3d3509bb3381/src/Identity/EntityFrameworkCore/src/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Identity/Extensions.Stores/src/IdentityRole.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/41/13c8d524/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/326b57f3d9984be4ade731cda7cc3fb81f4918/6a/f7165204/CertificatePal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Leonid/RiderProjects/TaskMasterAPI/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Leonid/RiderProjects/TaskMasterAPI/TaskMasterAPI.DAL/Seeds/DataSeed.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -61,6 +64,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Launch Settings Profile.TaskMasterAPI: http.executor": "Debug",
+    ".NET Launch Settings Profile.TaskMasterAPI: https.executor": "Debug",
+    "Docker.TaskMasterAPI/Dockerfile.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -79,7 +84,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.TaskMasterAPI: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.TaskMasterAPI: https">
     <configuration name="TaskMasterAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TaskMasterAPI/TaskMasterAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -129,6 +134,7 @@
       <deployment type="dockerfile">
         <settings>
           <option name="imageTag" value="taskmasterapi" />
+          <option name="buildOnly" value="true" />
           <option name="containerName" value="taskmasterapi" />
           <option name="contextFolderPath" value="C:\Users\Leonid\RiderProjects\TaskMasterAPI" />
           <option name="portBindings">
@@ -219,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732089642745</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавил новую модель для указания компании а так же расширил модели клиента и задач.">
+      <option name="closed" value="true" />
+      <created>1732093526322</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732093526322</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,26 +243,10 @@
     <MESSAGE value="Подключил БД" />
     <MESSAGE value="Обновил README.md" />
     <MESSAGE value="Обновил workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновил workspace.xml" />
+    <MESSAGE value="Добавил новую модель для указания компании а так же расширил модели клиента и задач." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил новую модель для указания компании а так же расширил модели клиента и задач." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\Leonid\RiderProjects\TaskMasterAPI\TaskMasterAPI.DAL\Seeds\DataSeed.cs" containingFunctionPresentation="Method 'Record'">
-            <startOffsets>
-              <option value="679" />
-            </startOffsets>
-            <endOffsets>
-              <option value="726" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="LaunchSettings">
         <watch expression="$exception.Source" />
