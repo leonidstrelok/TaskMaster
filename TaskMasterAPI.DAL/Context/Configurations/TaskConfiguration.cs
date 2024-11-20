@@ -14,7 +14,22 @@ public class TaskConfiguration : IEntityTypeConfiguration<Task>
 
         builder.HasOne(t => t.Client)
             .WithMany(c => c.Tasks)
-            .HasForeignKey(t => t.ClientId);
+            .HasForeignKey(t => t.ClientId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        // Связь между Task и Author через AuthorId
+        builder
+            .HasOne(t => t.Author)
+            .WithMany() // Без обратной навигации
+            .HasForeignKey(t => t.AuthorId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        // Связь между Task и Tester через TesterId
+        builder
+            .HasOne(t => t.Tester)
+            .WithMany() // Без обратной навигации
+            .HasForeignKey(t => t.TesterId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         builder.Ignore("ClientId1");
     }

@@ -9,7 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Обновил README.md" />
+    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Обновил workspace.xml">
+      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/CompanyConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/20241120083636_Add_Table_Company_And_New_Relations_For_Task.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/20241120083636_Add_Table_Company_And_New_Relations_For_Task.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/CompanyIndustryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Company.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/TaskConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/TaskConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/RoleType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/RoleType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Task.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Task.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +43,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/3f1acb59718cadf111a0a796681e3d3509bb3381/src/Identity/EntityFrameworkCore/src/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Identity/Extensions.Stores/src/IdentityRole.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/41/13c8d524/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Leonid/RiderProjects/TaskMasterAPI/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Leonid/RiderProjects/TaskMasterAPI/TaskMasterAPI.DAL/Seeds/DataSeed.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -191,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732089573251</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Обновил workspace.xml">
+      <option name="closed" value="true" />
+      <created>1732089642745</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732089642745</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,6 +228,31 @@
     <MESSAGE value="Добавил новые библиотеки а так же добавил новую миграцию для пользователя" />
     <MESSAGE value="Подключил БД" />
     <MESSAGE value="Обновил README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновил README.md" />
+    <MESSAGE value="Обновил workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил workspace.xml" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\Leonid\RiderProjects\TaskMasterAPI\TaskMasterAPI.DAL\Seeds\DataSeed.cs" containingFunctionPresentation="Method 'Record'">
+            <startOffsets>
+              <option value="679" />
+            </startOffsets>
+            <endOffsets>
+              <option value="726" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="LaunchSettings">
+        <watch expression="$exception.Source" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

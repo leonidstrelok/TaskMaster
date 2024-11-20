@@ -5,4 +5,5 @@ public enum RoleType
     Admin,
     Director,
     Customer,
+    Tester
 }

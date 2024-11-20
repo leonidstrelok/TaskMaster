@@ -22,23 +22,24 @@ public class DataSeed
     public async Task Record()
     {
         await _dbContext.Database.MigrateAsync();
-
+        
         var client = new Client()
         {
             UserName = "Leonid"
         };
-
+        
         if (await _userManager.FindByNameAsync(client.UserName) == default)
         {
             await _userManager.CreateAsync(client, "P@ssw0rd1!");
         }
-
+        
         if (!_roleManager.Roles.Any())
         {
             await _roleManager.CreateAsync(new IdentityRole(RoleType.Admin.ToString()));
             await _roleManager.CreateAsync(new IdentityRole(RoleType.Director.ToString()));
             await _roleManager.CreateAsync(new IdentityRole(RoleType.Customer.ToString()));
-
+            await _roleManager.CreateAsync(new IdentityRole(RoleType.Tester.ToString()));
+        
             await _userManager.AddToRoleAsync(client, RoleType.Admin.ToString());
         }
     }
