@@ -10,45 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Подключил БД">
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/RefreshDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/TokenDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Exceptions/NotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Exceptions/ValidationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Interfaces/IIdentityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Interfaces/IJwtAuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Services/IdentityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Services/JwtAuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/CommentTaskConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/HistoryTaskConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/TaskConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Base.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/LabelType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/PriorityType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/RoleType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/StatusType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/CommentTask.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/HistoryTask.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Task.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/TaskMasterAPI.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/TaskMasterAPI.BLL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/ClientConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/Configurations/ClientConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Base/GenderType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/GenderType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,15 +28,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/1-new-models-with-migrations-need-to-be-added" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/3f1acb59718cadf111a0a796681e3d3509bb3381/src/Identity/EntityFrameworkCore/src/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Identity/Extensions.Stores/src/IdentityRole.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2p4039HyaIBd06Iw8xopA7kVHeY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -78,12 +54,15 @@
   "keyToString": {
     ".NET Launch Settings Profile.TaskMasterAPI: http.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/1-new-models-with-migrations-need-to-be-added",
+    "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
     ],
     "rider.external.source.directories": [
       "C:\\Users\\Leonid\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
@@ -160,11 +139,17 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
