@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "VAQesSgz5La0dF1nls4qvaBG5fWlUXvCKWslqz8PVbn1A9ZaGgd10ddGAdQcesIZ3BGcsnYF5+UtneLq4yTHeQ==",
+  "dgSpecHash": "iEU/ynqaFPqFZmObi2CjM8tDjf7TpkpjffRSRgOyLY2Lyy5SHw1HsrXXrI+u17cuSayVjnCVdHBK8qGt66Cs6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Leonid\\RiderProjects\\TaskMasterAPI\\TaskMasterAPI\\TaskMasterAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Leonid\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\csharpfunctionalextensions\\3.2.0\\csharpfunctionalextensions.3.2.0.nupkg.sha512",
     "C:\\Users\\Leonid\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\Leonid\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Leonid\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Leonid\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\Leonid\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Leonid\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\Leonid\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.11\\microsoft.aspnetcore.cryptography.internal.8.0.11.nupkg.sha512",
     "C:\\Users\\Leonid\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.11\\microsoft.aspnetcore.cryptography.keyderivation.8.0.11.nupkg.sha512",

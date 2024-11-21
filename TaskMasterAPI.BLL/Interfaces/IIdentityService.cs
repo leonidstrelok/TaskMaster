@@ -12,4 +12,5 @@ public interface IIdentityService
     Task LockClientAsync(string clientId, DateTimeOffset? until);
     Task RemoveClient(string clientId);
     Task UnlockClientAsync(string clientId);
+    Task AddToClaimAsync(string userId, string claimType, string claimValue, CancellationToken cancellationToken = default);
 }

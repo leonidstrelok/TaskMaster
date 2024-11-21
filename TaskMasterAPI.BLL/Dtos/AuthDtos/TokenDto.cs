@@ -1,4 +1,5 @@
 ﻿using TaskMasterAPI.Models.Bases;
+using TaskMasterAPI.Models.Bases.Enums;
 
 namespace TaskMasterAPI.BLL.Dtos;
 

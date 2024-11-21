@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using TaskMasterAPI.BLL.Exceptions;
 using TaskMasterAPI.BLL.Interfaces;
@@ -8,30 +9,22 @@ using ValidationFailure = FluentValidation.Results.ValidationFailure;
 
 namespace TaskMasterAPI.BLL.Services;
 
-public class IdentityService : IIdentityService
+public class IdentityService(UserManager<Client> userManager, ILogger<IdentityService> logger)
+    : IIdentityService
 {
-    private readonly UserManager<Client> _userManager;
-    private readonly ILogger<IdentityService> _logger;
-
-    public IdentityService(UserManager<Client> userManager, ILogger<IdentityService> logger)
-    {
-        _userManager = userManager;
-        _logger = logger;
-    }
-
     public async Task ChangeClientPasswordAsync(string clientId, string newPassword)
     {
-        var client = await _userManager.FindByIdAsync(clientId);
+        var client = await userManager.FindByIdAsync(clientId);
         ThrowExceptionIfNull(clientId, client!);
-        var result = await _userManager.RemovePasswordAsync(client!);
+        var result = await userManager.RemovePasswordAsync(client!);
         ThrowExceptionIfNotSuccess(result);
-        var setPasswordResult = await _userManager.AddPasswordAsync(client!, newPassword);
+        var setPasswordResult = await userManager.AddPasswordAsync(client!, newPassword);
         ThrowExceptionIfNotSuccess(setPasswordResult);
     }
 
     public async Task<string> CreateUserAsync(Client client, string password, bool needChangePassword = true)
     {
-        var result = await _userManager.CreateAsync(client, password);
+        var result = await userManager.CreateAsync(client, password);
         ThrowExceptionIfNotSuccess(result);
 
         return client.Id;
@@ -39,44 +32,57 @@ public class IdentityService : IIdentityService
 
     public async Task UpdateUserAsync(Client client)
     {
-        var result = await _userManager.UpdateAsync(client);
+        var result = await userManager.UpdateAsync(client);
         ThrowExceptionIfNotSuccess(result);
     }
 
     public async Task<ICollection<string>> GetRolesByClientIdAsync(string clientId)
     {
-        var client = await _userManager.FindByIdAsync(clientId);
-        return await _userManager.GetRolesAsync(client!);
+        var client = await userManager.FindByIdAsync(clientId);
+        return await userManager.GetRolesAsync(client!);
     }
 
     public async Task<Client> GetClientByUserNameAsync(string userName)
     {
-        return (await _userManager.FindByNameAsync(userName))!;
+        return (await userManager.FindByNameAsync(userName))!;
     }
 
     public async Task LockClientAsync(string clientId, DateTimeOffset? until)
     {
-        var client = await _userManager.FindByIdAsync(clientId);
+        var client = await userManager.FindByIdAsync(clientId);
         ThrowExceptionIfNull(clientId, client!);
-        var result = await _userManager.SetLockoutEnabledAsync(client!, true);
+        var result = await userManager.SetLockoutEnabledAsync(client!, true);
         ThrowExceptionIfNotSuccess(result);
-        var lockResult = await _userManager.SetLockoutEndDateAsync(client!, until);
+        var lockResult = await userManager.SetLockoutEndDateAsync(client!, until);
         ThrowExceptionIfNotSuccess(lockResult);
     }
-    
+
     public async Task UnlockClientAsync(string clientId)
     {
-        var client = await _userManager.FindByIdAsync(clientId);
+        var client = await userManager.FindByIdAsync(clientId);
         ThrowExceptionIfNull(clientId, client!);
-        var result = await _userManager.SetLockoutEndDateAsync(client!, DateTimeOffset.Now.AddDays(-1));
+        var result = await userManager.SetLockoutEndDateAsync(client!, DateTimeOffset.Now.AddDays(-1));
         ThrowExceptionIfNotSuccess(result);
-        _logger.LogInformation("{UserName} is unlocked", client!.UserName);
+        logger.LogInformation("{UserName} is unlocked", client!.UserName);
+    }
+
+    public async Task AddToClaimAsync(string userId, string claimType, string claimValue,
+        CancellationToken cancellationToken = default)
+    {
+        var user = await userManager.FindByIdAsync(userId);
+        ThrowExceptionIfNull(userId, user);
+        var claims = await userManager.GetClaimsAsync(user);
+        if (claims.All(p => p.Type != claimType))
+        {
+            var result = await userManager.AddClaimAsync(user, new Claim(claimType, claimValue));
+            ThrowExceptionIfNotSuccess(result);
+        }
     }
 
     public async Task RemoveClient(string clientId)
     {
-        var client = await _userManager.FindByIdAsync(clientId);
-        var result = await _userManager.DeleteAsync(client!);
+        var client = await userManager.FindByIdAsync(clientId);
+        var result = await userManager.DeleteAsync(client!);
         ThrowExceptionIfNotSuccess(result);
     }
 
@@ -88,7 +94,7 @@ public class IdentityService : IIdentityService
         }
     }
 
-    public static void ThrowExceptionIfNotSuccess(IdentityResult identityResult)
+    private static void ThrowExceptionIfNotSuccess(IdentityResult identityResult)
     {
         if (!identityResult.Succeeded)
         {

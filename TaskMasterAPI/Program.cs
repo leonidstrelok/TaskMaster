@@ -1,3 +1,5 @@
+using System.Reflection;
+using Microsoft.OpenApi.Models;
 using TaskMasterAPI.BLL;
 using TaskMasterAPI.DAL.Seeds;
 using TaskMasterAPI.Middlewares;
@@ -19,11 +21,11 @@ public static class Program
 
         builder.WebHost.UseKestrel(options =>
         {
-            options.ListenAnyIP(80); // HTTP
-            options.ListenAnyIP(443, listenOptions => // HTTPS
-            {
-                listenOptions.UseHttps();
-            });
+            // options.ListenAnyIP(80); // HTTP
+            // options.ListenAnyIP(443, listenOptions => // HTTPS
+            // {
+            //     listenOptions.UseHttps();
+            // });
         });
         ConfigureWebApplication(builder.Build());
     }
@@ -32,7 +34,36 @@ public static class Program
     {
         services.AddControllers();
         services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
+        services.AddSwaggerGen(c =>
+        {
+
+            {
+                c.CustomSchemaIds(x => x.FullName);
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Please enter token",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    BearerFormat = "JWT",
+                    Scheme = "bearer"
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type=ReferenceType.SecurityScheme,
+                                Id="Bearer"
+                            }
+                        },
+                        new string[]{}
+                    }
+                });
+            }
+        });
         services.AddBllServiceCollection(configuration);
         services.AddTransient<ExceptionHandlingMiddleware>();
     
@@ -53,12 +84,12 @@ public static class Program
         app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
         app.UseHttpsRedirection();
 
-        // app.UseAuthentication();
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-        app.MapControllers();
+        app.MapControllers().RequireAuthorization();
 
         app.Run();
     }

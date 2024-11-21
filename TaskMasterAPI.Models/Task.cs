@@ -1,10 +1,17 @@
 ﻿using TaskMasterAPI.Models.Bases;
+using TaskMasterAPI.Models.Bases.Enums;
 using TaskMasterAPI.Models.Clients;
 
 namespace TaskMasterAPI.Models;
 
 public class Task : Bases.Base
 {
+    public Task()
+    {
+        CreatedAt = DateTime.Now;
+        Status = StatusType.Created;
+    }
+
     public string Title { get; set; }
     public string Description { get; set; }
     public StatusType Status { get; set; }

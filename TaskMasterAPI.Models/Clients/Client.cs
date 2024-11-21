@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using TaskMasterAPI.Models.Base;
+using TaskMasterAPI.Models.Bases.Enums;
 
 namespace TaskMasterAPI.Models.Clients;
 

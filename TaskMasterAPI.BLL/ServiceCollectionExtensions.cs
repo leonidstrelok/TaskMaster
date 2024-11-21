@@ -1,9 +1,13 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
+using MediatR;
+using MediatR.Pipeline;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using TaskMasterAPI.BLL.Behaviours;
 using TaskMasterAPI.BLL.Interfaces;
 using TaskMasterAPI.BLL.Services;
 using TaskMasterAPI.DAL;
@@ -16,6 +20,12 @@ public static class ServiceCollectionExtensions
 {
     public static void AddBllServiceCollection(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
+        services.AddScoped(typeof(IPipelineBehavior<,>), typeof(RequestPostProcessorBehavior<,>));
+
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        services.AddMediatR(p => p.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+
         services.AddIdentity<Client, IdentityRole>(opt =>
             {
                 opt.Password.RequireNonAlphanumeric = false;
@@ -26,7 +36,12 @@ public static class ServiceCollectionExtensions
             .AddDefaultTokenProviders();
 
 
-        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
             .AddJwtBearer(p =>
             {
                 p.SaveToken = true;
@@ -46,6 +61,7 @@ public static class ServiceCollectionExtensions
 
         services.AddScoped<IIdentityService, IdentityService>();
         services.AddScoped<IJwtAuthService, JwtAuthService>();
+        services.AddScoped<IRoleMemberService, RoleMemberService>();
 
         services.AddDalServiceCollection(configuration);
     }

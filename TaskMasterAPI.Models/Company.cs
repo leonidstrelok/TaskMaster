@@ -1,4 +1,5 @@
 ﻿using TaskMasterAPI.Models.Bases;
+using TaskMasterAPI.Models.Bases.Enums;
 using TaskMasterAPI.Models.Clients;
 
 namespace TaskMasterAPI.Models;

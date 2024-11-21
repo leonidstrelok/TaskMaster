@@ -1,9 +1,10 @@
-﻿using TaskMasterAPI.BLL.Dtos;
+﻿using CSharpFunctionalExtensions;
+using TaskMasterAPI.BLL.Dtos;
 
 namespace TaskMasterAPI.BLL.Interfaces;
 
 public interface IJwtAuthService
 {
-    Task<TokenDto> AuthenticationByLogin(string userName, string password);
+    Task<Maybe<TokenDto>> AuthenticationByLogin(string userName, string password);
     Task<TokenDto> AuthenticationByRefreshToken(RefreshDto refresh);
 }

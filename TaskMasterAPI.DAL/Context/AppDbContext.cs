@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TaskMasterAPI.DAL.Enums;
 using TaskMasterAPI.DAL.Interfaces;
 using TaskMasterAPI.Models.Clients;
 
@@ -15,9 +16,26 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
         base.OnModelCreating(modelBuilder);
     }
 
-    public async Task AddAsync<T>(T entity, CancellationToken cancellationToken = default) where T : class
+    async Task IApplicationDbContext.SaveChangesAsync<T>(T entity,
+        SaveChangeType type,
+        CancellationToken cancellationToken = default)
     {
-        await AddAsync(entity, cancellationToken);
+        switch (type)
+        {
+            case SaveChangeType.Add:
+                await AddAsync(entity!, cancellationToken);
+                break;
+            case SaveChangeType.Update:
+                Update(entity!);
+                break;
+            case SaveChangeType.Delete:
+                Remove(entity!);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(type), type, null);
+        }
+
+        await SaveChangesAsync(cancellationToken);
     }
 
     public async Task InvokeTransactionAsync(Func<Task> action, CancellationToken cancellationToken = default)

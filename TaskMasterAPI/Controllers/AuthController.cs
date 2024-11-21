@@ -1,37 +1,56 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
+﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
+using TaskMasterAPI.BLL.Dtos;
+using TaskMasterAPI.BLL.Interfaces;
+using TaskMasterAPI.BLL.Modules.Clients.Commands.AuthByLogin;
+using TaskMasterAPI.BLL.Modules.Clients.Commands.RegistrationClient;
 
 namespace TaskMasterAPI.Controllers;
 
 [ApiController]
 [Consumes("application/json")]
 [Produces("application/json")]
-[Route("api/[controller]")]
-public class AuthController : ControllerBase
+[Route("api/v1/[controller]")]
+[AllowAnonymous]
+public class AuthController(IMediator mediator, IJwtAuthService jwtAuthService) : ControllerBase
 {
-    private readonly IConfiguration _configuration;
-
-    public AuthController(IConfiguration configuration)
+    [HttpPost, Route("login")]
+    [ProducesResponseType(typeof(TokenDto), StatusCodes.Status200OK)]
+    public async Task<IActionResult> Login([FromBody] AuthByLoginCommand request)
     {
-        _configuration = configuration;
+        var result = await mediator.Send(request);
+        if (result.HasValue)
+            return Ok(result.Value);
+
+        return Unauthorized("Invalid login or password");
     }
 
-    [Route("login/{username}")]
-    [HttpGet]
-    public IActionResult Login(string username)
+    [HttpPost, Route("register")]
+    public async Task<IActionResult> Registration(RegistrationClientCommand request)
     {
-        var claims = new List<Claim>() { new(ClaimTypes.Name, username) };
-        var algorithm = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["ApplicationSettings:Secret"]));
-        var jwt = new JwtSecurityToken(_configuration["ApplicationSettings:Issuer"],
-            _configuration["ApplicationSettings:Audience"],
-            claims,
-            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
-            signingCredentials: new SigningCredentials(algorithm,
-                SecurityAlgorithms.HmacSha256));
+        var result = await mediator.Send(request);
 
-        return Ok(new JwtSecurityTokenHandler().WriteToken(jwt));
+        if (result)
+        {
+            return Ok();
+        }
+
+        return BadRequest();
+    }
+
+    [HttpPost, Route("refresh-token")]
+    [ProducesResponseType(typeof(TokenDto), StatusCodes.Status200OK)]
+    public async Task<IActionResult> RefreshToken([FromBody] RefreshDto request)
+    {
+        try
+        {
+            var result = await jwtAuthService.AuthenticationByRefreshToken(request);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
     }
 }

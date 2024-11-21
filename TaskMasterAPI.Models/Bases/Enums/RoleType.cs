@@ -1,4 +1,4 @@
-﻿namespace TaskMasterAPI.Models.Bases;
+﻿namespace TaskMasterAPI.Models.Bases.Enums;
 
 public enum RoleType
 {

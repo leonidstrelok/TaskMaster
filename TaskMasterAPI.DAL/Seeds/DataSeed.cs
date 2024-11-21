@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using TaskMasterAPI.DAL.Context;
 using TaskMasterAPI.Models.Bases;
+using TaskMasterAPI.Models.Bases.Enums;
 using TaskMasterAPI.Models.Clients;
 
 namespace TaskMasterAPI.DAL.Seeds;
