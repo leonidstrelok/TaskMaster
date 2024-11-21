@@ -107,17 +107,27 @@ Task Manager API — это RESTful сервис для управления з�
 ## **Как развернуть проект**
 
 ### 1. Установить зависимости
-- Установите .NET SDK версии 8.0 или выше.
-- Установите PostgreSQL.
 
-### 2. Настроить подключение к базе данных
-В файле `appsettings.json` укажите строку подключения:
+- Установите .NET SDK версии 8.0 или выше.
+- Docker
+- Скачайте WSL образы (если вы запускаете на Windows).
+
+### 2. Запуск в Docker можно произвести с помощью команды
+
+- Для Windows: перейдите в корень проекта и выполните скрипт ./run-containers.ps1
+- Для Linux: Перейдите в корень проекта и выполните скрипт ./run-containers.sh
+
+### 3. Настроить подключение к базе данных
+
+В файлах `appsettings.json` - `appsettings.Development.json` укажите строку подключения:
+
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Database=TaskManager;Username=postgres;Password=yourpassword"
+  "DefaultConnection": "Host=localhost;Database=TaskManager;Username={YourUserName};Password={YourPassword}"
 },
-"Jwt": {
+"ApplicationSettings": {
   "Key": "YourSecretKey",
   "Issuer": "TaskManagerAPI",
-  "Audience": "TaskManagerAPIUsers"
+  "Audience": "TaskManagerAPIUsers",
+  "TokenValidityInMinutes": "5"
 }

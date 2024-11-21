@@ -9,72 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Behaviours/RequestValidationBehavior.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/AuthDtos/RegistrationDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/ClientDtos/ClientDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/TaskDtos/CommentTaskDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/TaskDtos/TaskDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Helpers/SortExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Interfaces/IRoleMemberService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/MappingProfiles/ClientMappingProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/MappingProfiles/TaskMappingProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Clients/Commands/AuthByLogin/AuthByLoginCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Clients/Commands/AuthByLogin/AuthByLoginCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Clients/Commands/RegistrationClient/RegistrationClientCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Clients/Commands/RegistrationClient/RegistrationClientCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Clients/Commands/RegistrationClient/RegistrationClientCommandValidators.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Clients/Queries/GetAllUsers/GetAllUserQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Clients/Queries/GetAllUsers/GetAllUserQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/CreateTask/CreateTaskCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/CreateTask/CreateTaskCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/CreateTask/CreateTaskCommandValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/DeleteTask/DeleteTaskCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/DeleteTask/DeleteTaskCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/UpdateTask/UpdateTaskCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/UpdateTask/UpdateTaskCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Commands/UpdateTask/UpdateTaskCommandValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Queries/GetAllTasks/GetAllTaskQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Queries/GetAllTasks/GetAllTaskQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Queries/GetTaskById/GetTaskByIdQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Modules/Tasks/Queries/GetTaskById/GetTaskByIdQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Services/RoleMemberService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Enums/SaveChangeType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Enums/SortType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI/Controllers/ClientController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskMasterAPI/Controllers/TaskController.cs" afterDir="false" />
+    <list default="true" id="5534dd2e-dce8-4f24-ae0c-a77d44e5ad38" name="Changes" comment="Добавил новые модели для маппинга а так же добавил новые команды для IMediator">
+      <change afterPath="$PROJECT_DIR$/run-containers.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskMasterAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/RefreshDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/AuthDtos/RefreshDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/TokenDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Dtos/AuthDtos/TokenDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/Interfaces/IIdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Interfaces/IIdentityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/Interfaces/IJwtAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Interfaces/IJwtAuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/Services/IdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Services/IdentityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/Services/JwtAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/Services/JwtAuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.BLL/TaskMasterAPI.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.BLL/TaskMasterAPI.BLL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Context/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Interfaces/IApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Interfaces/IApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.DAL/Seeds/DataSeed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/CompanyIndustryType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Enums/CompanyIndustryType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/GenderType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Enums/GenderType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/LabelType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Enums/LabelType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/PriorityType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Enums/PriorityType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/RoleType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Enums/RoleType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/StatusType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Bases/Enums/StatusType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Clients/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Company.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Company.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI.Models/Task.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI.Models/Task.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/Debug/net8.0/TaskMasterAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/TaskMasterAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskMasterAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +33,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/41/13c8d524/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/326b57f3d9984be4ade731cda7cc3fb81f4918/6a/f7165204/CertificatePal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f2dc89959a504e11a6af726f25086d5779e928/a8/a5d7ac32/XmlTextReaderImpl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Leonid/RiderProjects/TaskMasterAPI/TaskMasterAPI.DAL/Context/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -326,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732170748589</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Добавил новые модели для маппинга а так же добавил новые команды для IMediator">
+      <option name="closed" value="true" />
+      <created>1732201716319</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732201716319</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +290,8 @@
     <MESSAGE value="Добавил фронт на реакте для приложения" />
     <MESSAGE value="Удалил неиспользуемые зависимости" />
     <MESSAGE value="Настроил конфигурацию для фронта на подключение к бэку и выполнению запросов." />
-    <option name="LAST_COMMIT_MESSAGE" value="Настроил конфигурацию для фронта на подключение к бэку и выполнению запросов." />
+    <MESSAGE value="Добавил новые модели для маппинга а так же добавил новые команды для IMediator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил новые модели для маппинга а так же добавил новые команды для IMediator" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
