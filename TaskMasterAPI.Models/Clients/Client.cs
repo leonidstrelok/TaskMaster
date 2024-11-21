@@ -12,5 +12,6 @@ public class Client : IdentityUser
     public DateTime DeletedAt { get; set; }
     public GenderType Gender { get; set; }
     public ICollection<Task>? Tasks { get; set; }
+    public ICollection<Command>? Commands { get; set; }
     public Guid? CompanyId { get; set; }
 }

@@ -21,11 +21,11 @@ public static class Program
 
         builder.WebHost.UseKestrel(options =>
         {
-            // options.ListenAnyIP(80); // HTTP
-            // options.ListenAnyIP(443, listenOptions => // HTTPS
-            // {
-            //     listenOptions.UseHttps();
-            // });
+            options.ListenAnyIP(80); // HTTP
+            options.ListenAnyIP(443, listenOptions => // HTTPS
+            {
+                listenOptions.UseHttps();
+            });
         });
         ConfigureWebApplication(builder.Build());
     }
