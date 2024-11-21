@@ -13,14 +13,11 @@ services:
       - task_manager_network
     volumes:
       - ./certs:/https:ro
-        
-  pgAdmin:
+      
+  frontend:
     ports:
-      - 8080:80
-    volumes:
-      - pgAdmin-data:/var/lib/pgadmin
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+      - "3000:80"
+    depends_on:
+      - taskmasterapi
     networks:
       - task_manager_network

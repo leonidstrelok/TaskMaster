@@ -5,7 +5,8 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+    const res = fetch('/api/test/data')
+    console.log(res)
   return (
     <>
       <div>

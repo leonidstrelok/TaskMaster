@@ -4,7 +4,6 @@ services:
       - 5432:5432
     volumes:
       - postgres-db:/var/lib/postgresql/data
-      - ./postgres:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: "/var/lib/postgresql/data/pgdata"

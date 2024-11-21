@@ -34,7 +34,7 @@ public static class Program
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddBllServiceCollection(configuration);
-        
+        services.AddTransient<ExceptionHandlingMiddleware>();
     
         await using var scope = services.BuildServiceProvider().CreateAsyncScope();
         
@@ -53,7 +53,7 @@ public static class Program
         app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
         app.UseHttpsRedirection();
 
-        app.UseAuthentication();
+        // app.UseAuthentication();
         app.UseAuthorization();
 
         app.UseMiddleware<ExceptionHandlingMiddleware>();
